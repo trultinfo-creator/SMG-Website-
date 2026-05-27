@@ -1,12 +1,64 @@
-:root { 
-    --bg: #050505; 
-    --white: #ffffff; 
-    --bronze: #a67c52; /* This is the gold/bronze accent */
-    --border: #222; 
+/* --- Global Foundation --- */
+:root {
+    --bg: #050505;
+    --white: #ffffff;
+    --bronze: #a67c52;
+    --border: #222;
 }
 
-/* Apply gold to headers and accents */
-h1, h2, h3 { color: var(--white); }
-.accent { color: var(--bronze); }
-.btn { background: var(--bronze); color: #000; border: none; padding: 20px 40px; }
-nav a { color: var(--bronze); text-decoration: none; }
+body {
+    background-color: var(--bg);
+    color: var(--white);
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+/* --- Brand Elements --- */
+.logo {
+    color: var(--bronze);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    color: var(--white);
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* --- Components --- */
+.btn {
+    display: inline-block;
+    background-color: var(--bronze);
+    color: #000;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+/* --- Form Architecture --- */
+input, select, textarea {
+    width: 100%;
+    background: #111;
+    border: 1px solid var(--border);
+    color: var(--white);
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+}
